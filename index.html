@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover luxury homes and rentals in the world's most desirable locations. Find your dream property with Zill0w's curated collection of premium real estate.">
+    <meta name="keywords" content="luxury homes, real estate, rentals, premium properties, luxury rentals, Beverly Hills, Malibu, New York">
+    <meta name="author" content="Zill0w">
+    <meta property="og:title" content="Zill0w - Luxury Homes & Rentals">
+    <meta property="og:description" content="Discover luxury homes and rentals in the world's most desirable locations.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://placehold.co/1200x630/2563EB/FFFFFF?text=Zill0w+Luxury+Real+Estate">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232563EB'><path d='M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25'/></svg>">
+    <title>Zill0w - Luxury Homes & Rentals</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" data-view="home-view" class="text-3xl font-extrabold text-blue-600 cursor-pointer">Zill0w</a>
+                </div>
+                
+                <!-- Navigation Links -->
+                <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                    <a href="#" data-view="buy-view" class="main-nav-link inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Buy</a>
+                    <a href="#" data-view="rent-view" class="main-nav-link inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Rent</a>
+                    <a href="#" data-view="luxury-view" class="main-nav-link inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Luxury</a>
+                    <a href="#" data-view="about-view" class="main-nav-link inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">About Us</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="flex items-center sm:hidden">
+                    <button type="button" id="mobile-menu-btn" class="touch-target inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500 transition-colors duration-200">
+                        <span class="sr-only">Open main menu</span>
+                        <svg id="menu-icon" class="block h-6 w-6 transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg id="close-icon" class="hidden h-6 w-6 transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu-transition hidden sm:hidden bg-white border-t border-gray-200 shadow-lg">
+                <div class="px-2 pt-2 pb-3 space-y-1 safe-area-inset">
+                    <a href="#" data-view="buy-view" class="mobile-nav-link touch-target block px-4 py-3 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 transition-colors duration-200">Buy</a>
+                    <a href="#" data-view="rent-view" class="mobile-nav-link touch-target block px-4 py-3 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 transition-colors duration-200">Rent</a>
+                    <a href="#" data-view="luxury-view" class="mobile-nav-link touch-target block px-4 py-3 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 transition-colors duration-200">Luxury</a>
+                    <a href="#" data-view="about-view" class="mobile-nav-link touch-target block px-4 py-3 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 transition-colors duration-200">About Us</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Home View (Landing Page) -->
+        <section id="home-view" class="view-section">
+             <!-- Hero Section -->
+            <div class="relative bg-gray-800">
+                <div class="absolute inset-0">
+                    <img class="w-full h-full object-cover brightness-50" src="./images/hero2.png" alt="Luxury home background">
+                </div>
+                <div class="relative min-h-[70vh] flex items-center justify-center py-24 sm:py-32">
+                    <div class="flex flex-col items-center text-center px-4">
+                        <h2 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">Find Your Luxury Home</h2>
+                        <p class="mt-4 text-xl text-gray-200 max-w-2xl">Discover the finest collection of luxury homes and rentals worldwide.</p>
+                        <!-- Search Bar -->
+                        <div class="mt-10 w-full max-w-2xl search-container">
+                            <form id="search-form" class="relative">
+                                <input type="text" id="search-input" placeholder="Enter City, Neighborhood, or ZIP Code" class="w-full px-5 py-4 pr-16 rounded-full border-0 text-gray-900 shadow-lg ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 text-base transition-all duration-200">
+                                <button type="submit" class="absolute right-2 top-1/2 -translate-y-1/2 touch-target bg-blue-600 text-white p-3 rounded-full font-semibold shadow-lg hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-all duration-200 hover:shadow-xl active:scale-95">
+                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" /></svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Property Listings Section (Home Page) -->
+            <div class="bg-gray-50 py-16 sm:py-24">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <!-- Featured Homes -->
+                    <section>
+                        <h2 class="text-3xl font-extrabold text-gray-900 mb-8">Featured Homes</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <!-- Cards will be populated dynamically if needed, static for now -->
+                             <!-- Card 101 -->
+                             <div class="property-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-[1.03] hover:shadow-xl" data-id="101">
+                                <div class="relative">
+                                    <img class="w-full h-64 object-cover" src="./images/house 2/card.jpg" alt="Modern Villa">
+                                    <span class="absolute top-4 left-4 bg-yellow-400 text-gray-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Featured</span>
+                                    <span class="absolute top-4 right-4 bg-black bg-opacity-50 text-white text-xs font-semibold px-3 py-1 rounded-full">For Sale</span>
+                                </div>
+                                <div class="p-6">
+                                    <p class="text-3xl font-bold text-gray-900 mb-2">$8,500,000</p>
+                                    <div class="flex flex-wrap gap-x-4 gap-y-2 text-gray-600 mb-4 text-sm">
+                                        <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" /></svg> 5 bed</span>
+                                        <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 3.75l-6 6v6h6l6-6-6-6zM11.25 3.75v6m0 0v6m0-6h6m-6 0H5.25" /></svg> 6 bath</span>
+                                        <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18h16.5M3 7.5l1.5 1.5M3 12l1.5-1.5m-1.5 6l1.5-1.5m1.5-1.5l-1.5 1.5m1.5-1.5l1.5 1.5M15 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3v1.5M3 7.5v1.5M3 12v1.5M3 16.5v1.5M21 3v1.5M21 7.5v1.5M21 12v1.5M21 16.5v1.5" /></svg> 7,200 sqft</span>
+                                    </div>
+                                    <h3 class="text-lg text-gray-800 font-semibold truncate">123 Luxury Lane</h3>
+                                    <p class="text-gray-500 text-sm mb-3">Beverly Hills, CA</p>
+                                    <div class="grid grid-cols-2 gap-2 text-xs text-gray-600">
+                                        <span class="flex items-center"><svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/></svg>House</span>
+                                        <span class="flex items-center"><svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/></svg>Available now</span>
+                                        <span class="flex items-center"><svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/></svg>A/C</span>
+                                        <span class="flex items-center"><svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"/></svg>Parking</span>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- Card 102 -->
+                             <div class="property-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-[1.03] hover:shadow-xl" data-id="102">
+                                <div class="relative">
+                                    <img class="w-full h-64 object-cover" src="./images/house1/card.png" alt="Coastal Estate">
+                                    <span class="absolute top-4 left-4 bg-yellow-400 text-gray-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Featured</span>
+                                    <span class="absolute top-4 right-4 bg-black bg-opacity-50 text-white text-xs font-semibold px-3 py-1 rounded-full">For Sale</span>
+                                </div>
+                                <div class="p-6">
+                                    <p class="text-3xl font-bold text-gray-900 mb-2">$14,200,000</p>
+                                    <div class="flex flex-wrap gap-x-4 gap-y-2 text-gray-600 mb-4 text-sm">
+                                        <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" /></svg> 7 bed</span>
+                                        <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 3.75l-6 6v6h6l6-6-6-6zM11.25 3.75v6m0 0v6m0-6h6m-6 0H5.25" /></svg> 9 bath</span>
+                                        <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18h16.5M3 7.5l1.5 1.5M3 12l1.5-1.5m-1.5 6l1.5-1.5m1.5-1.5l-1.5 1.5m1.5-1.5l1.5 1.5M15 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3v1.5M3 7.5v1.5M3 12v1.5M3 16.5v1.5M21 3v1.5M21 7.5v1.5M21 12v1.5M21 16.5v1.5" /></svg> 10,500 sqft</span>
+                                    </div>
+                                    <h3 class="text-lg text-gray-800 font-semibold truncate">456 Ocean Drive</h3>
+                                    <p class="text-gray-500 text-sm mb-3">Malibu, CA</p>
+                                    <div class="grid grid-cols-2 gap-2 text-xs text-gray-600">
+                                        <span class="flex items-center"><svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/></svg>Estate</span>
+                                        <span class="flex items-center"><svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/></svg>Available soon</span>
+                                        <span class="flex items-center"><svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/></svg>Pool</span>
+                                        <span class="flex items-center"><svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"/></svg>Tennis Court</span>
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- Card 103 -->
+                             <div class="property-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-[1.03] hover:shadow-xl" data-id="103">
+                                <div class="relative">
+                                    <img class="w-full h-64 object-cover" src="./images/house 3/card.webp" alt="Sky Penthouse">
+                                    <span class="absolute top-4 left-4 bg-yellow-400 text-gray-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Featured</span>
+                                    <span class="absolute top-4 right-4 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">For Rent</span>
+                                </div>
+                                <div class="p-6">
+                                    <p class="text-3xl font-bold text-gray-900 mb-2">$45,000/mo</p>
+                                    <div class="flex flex-wrap gap-x-4 gap-y-2 text-gray-600 mb-4 text-sm">
+                                        <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" /></svg> 4 bed</span>
+                                        <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 3.75l-6 6v6h6l6-6-6-6zM11.25 3.75v6m0 0v6m0-6h6m-6 0H5.25" /></svg> 5 bath</span>
+                                        <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18h16.5M3 7.5l1.5 1.5M3 12l1.5-1.5m-1.5 6l1.5-1.5m1.5-1.5l-1.5 1.5m1.5-1.5l1.5 1.5M15 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3v1.5M3 7.5v1.5M3 12v1.5M3 16.5v1.5M21 3v1.5M21 7.5v1.5M21 12v1.5M21 16.5v1.5" /></svg> 5,100 sqft</span>
+                                    </div>
+                                    <h3 class="text-lg text-gray-800 font-semibold truncate">789 Park Ave, PH-1A</h3>
+                                    <p class="text-gray-500 text-sm mb-3">New York, NY</p>
+                                    <div class="grid grid-cols-2 gap-2 text-xs text-gray-600">
+                                        <span class="flex items-center"><svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/></svg>Apartment</span>
+                                        <span class="flex items-center"><svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/></svg>Available now</span>
+                                        <span class="flex items-center"><svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/></svg>A/C</span>
+                                        <span class="flex items-center"><svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20"><path d="M4 3a2 2 0 00-2 2v1.816a2 2 0 00.586 1.414l2.828 2.828A2 2 0 006.828 12H9v4a1 1 0 102 0v-4h2.172a2 2 0 001.414-.586l2.828-2.828A2 2 0 0018 6.828V5a2 2 0 00-2-2H4zM9 8a1 1 0 11-2 0 1 1 0 012 0zm4 0a1 1 0 11-2 0 1 1 0 012 0z"/></svg>No pets</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                     <!-- Luxury Rentals (Home Page) -->
+                     <section class="mt-16">
+                         <h2 class="text-3xl font-extrabold text-gray-900 mb-8">Luxury Rentals</h2>
+                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <!-- Card 201 -->
+                             <div class="property-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-[1.03] hover:shadow-xl" data-id="201">
+                                <div class="relative">
+                                    <img class="w-full h-64 object-cover" src="./images/house 4/card1.webp" alt="Miami Rental">
+                                    <span class="absolute top-4 right-4 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">For Rent</span>
+                                </div>
+                                <div class="p-6">
+                                    <p class="text-3xl font-bold text-gray-900 mb-2">$22,000/mo</p>
+                                    <div class="flex flex-wrap gap-x-4 gap-y-2 text-gray-600 mb-4 text-sm">
+                                        <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" /></svg> 3 bed</span>
+                                        <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 3.75l-6 6v6h6l6-6-6-6zM11.25 3.75v6m0 0v6m0-6h6m-6 0H5.25" /></svg> 3 bath</span>
+                                        <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18h16.5M3 7.5l1.5 1.5M3 12l1.5-1.5m-1.5 6l1.5-1.5m1.5-1.5l-1.5 1.5m1.5-1.5l1.5 1.5M15 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3v1.5M3 7.5v1.5M3 12v1.5M3 16.5v1.5M21 3v1.5M21 7.5v1.5M21 12v1.5M21 16.5v1.5" /></svg> 2,800 sqft</span>
+                                    </div>
+                                    <h3 class="text-lg text-gray-800 font-semibold truncate">300 Biscayne Blvd, Apt 50A</h3>
+                                    <p class="text-gray-500 text-sm mb-3">Miami, FL</p>
+                                    <div class="grid grid-cols-2 gap-2 text-xs text-gray-600">
+                                        <span class="flex items-center"><svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/></svg>Condo</span>
+                                        <span class="flex items-center"><svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/></svg>Available Jan 1</span>
+                                        <span class="flex items-center"><svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/></svg>Pool</span>
+                                        <span class="flex items-center"><svg class="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20"><path d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"/></svg>In unit laundry</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Card 202 -->
+                            <div class="property-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-[1.03] hover:shadow-xl" data-id="202">
+                                <div class="relative">
+                                    <img class="w-full h-64 object-cover" src="./images/house 5/card.webp" alt="Aspen Chalet">
+                                    <span class="absolute top-4 right-4 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">For Rent</span>
+                                </div>
+                                <div class="p-6">
+                                    <p class="text-3xl font-bold text-gray-900 mb-2">$75,000/mo</p>
+                                    <div class="flex flex-wrap gap-x-4 gap-y-2 text-gray-600 mb-4 text-sm">
+                                        <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" /></svg> 6 bed</span>
+                                        <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 3.75l-6 6v6h6l6-6-6-6zM11.25 3.75v6m0 0v6m0-6h6m-6 0H5.25" /></svg> 7 bath</span>
+                                        <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18h16.5M3 7.5l1.5 1.5M3 12l1.5-1.5m-1.5 6l1.5-1.5m1.5-1.5l-1.5 1.5m1.5-1.5l1.5 1.5M15 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3v1.5M3 7.5v1.5M3 12v1.5M3 16.5v1.5M21 3v1.5M21 7.5v1.5M21 12v1.5M21 16.5v1.5" /></svg> 8,000 sqft</span>
+                                    </div>
+                                    <h3 class="text-lg text-gray-800 font-semibold truncate">900 Starwood Peak</h3>
+                                    <p class="text-gray-500 text-sm">Aspen, CO</p>
+                                </div>
+                            </div>
+                            <!-- Card 203 -->
+                            <div class="property-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-[1.03] hover:shadow-xl" data-id="203">
+                                <div class="relative">
+                                    <img class="w-full h-64 object-cover" src="./images/house 6/card.webp" alt="London Townhouse">
+                                    <span class="absolute top-4 right-4 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">For Rent</span>
+                                </div>
+                                <div class="p-6">
+                                    <p class="text-3xl font-bold text-gray-900 mb-2">£30,000/mo</p>
+                                    <div class="flex flex-wrap gap-x-4 gap-y-2 text-gray-600 mb-4 text-sm">
+                                        <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" /></svg> 5 bed</span>
+                                        <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 3.75l-6 6v6h6l6-6-6-6zM11.25 3.75v6m0 0v6m0-6h6m-6 0H5.25" /></svg> 4 bath</span>
+                                        <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18h16.5M3 7.5l1.5 1.5M3 12l1.5-1.5m-1.5 6l1.5-1.5m1.5-1.5l-1.5 1.5m1.5-1.5l1.5 1.5M15 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3v1.5M3 7.5v1.5M3 12v1.5M3 16.5v1.5M21 3v1.5M21 7.5v1.M21 12v1.5M21 16.5v1.5" /></svg> 4,300 sqft</span>
+                                    </div>
+                                    <h3 class="text-lg text-gray-800 font-semibold truncate">22 Belgrave Square</h3>
+                                    <p class="text-gray-500 text-sm">London, UK</p>
+                                </div>
+                            </div>
+                         </div>
+                     </section>
+                 </div>
+             </div>
+        </section>
+
+        <!-- Buy View -->
+        <section id="buy-view" class="view-section hidden bg-gray-50 py-16 sm:py-24">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mb-6">
+                    <a href="#" data-view="home-view" class="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors duration-200">
+                        <svg class="w-5 h-5 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" /></svg>
+                        Back to Home
+                    </a>
+                </div>
+                <h2 id="search-results-title" class="text-3xl font-extrabold text-gray-900 mb-8">Homes for Sale</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                     <!-- Property cards for Buy view - Identical structure to Home view -->
+                     <!-- Card 101 -->
+                     <div class="property-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-[1.03] hover:shadow-xl" data-id="101">
+                        <div class="relative">
+                            <img class="w-full h-64 object-cover" src="./images/house 2/card.jpg" alt="Modern Villa">
+                            <span class="absolute top-4 left-4 bg-yellow-400 text-gray-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Featured</span>
+                            <span class="absolute top-4 right-4 bg-black bg-opacity-50 text-white text-xs font-semibold px-3 py-1 rounded-full">For Sale</span>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-3xl font-bold text-gray-900 mb-2">$8,500,000</p>
+                            <div class="flex flex-wrap gap-x-4 gap-y-2 text-gray-600 mb-4 text-sm">
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" /></svg> 5 bed</span>
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 3.75l-6 6v6h6l6-6-6-6zM11.25 3.75v6m0 0v6m0-6h6m-6 0H5.25" /></svg> 6 bath</span>
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18h16.5M3 7.5l1.5 1.5M3 12l1.5-1.5m-1.5 6l1.5-1.5m1.5-1.5l-1.5 1.5m1.5-1.5l1.5 1.5M15 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3v1.5M3 7.5v1.5M3 12v1.5M3 16.5v1.5M21 3v1.5M21 7.5v1.5M21 12v1.5M21 16.5v1.5" /></svg> 7,200 sqft</span>
+                            </div>
+                            <h3 class="text-lg text-gray-800 font-semibold truncate">123 Luxury Lane</h3>
+                            <p class="text-gray-500 text-sm">Beverly Hills, CA</p>
+                        </div>
+                    </div>
+                     <!-- Card 102 -->
+                     <div class="property-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-[1.03] hover:shadow-xl" data-id="102">
+                        <div class="relative">
+                            <img class="w-full h-64 object-cover" src="./images/house1/card.png" alt="Coastal Estate">
+                            <span class="absolute top-4 left-4 bg-yellow-400 text-gray-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Featured</span>
+                            <span class="absolute top-4 right-4 bg-black bg-opacity-50 text-white text-xs font-semibold px-3 py-1 rounded-full">For Sale</span>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-3xl font-bold text-gray-900 mb-2">$14,200,000</p>
+                            <div class="flex flex-wrap gap-x-4 gap-y-2 text-gray-600 mb-4 text-sm">
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" /></svg> 7 bed</span>
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 3.75l-6 6v6h6l6-6-6-6zM11.25 3.75v6m0 0v6m0-6h6m-6 0H5.25" /></svg> 9 bath</span>
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18h16.5M3 7.5l1.5 1.5M3 12l1.5-1.5m-1.5 6l1.5-1.5m1.5-1.5l-1.5 1.5m1.5-1.5l1.5 1.5M15 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3v1.5M3 7.5v1.5M3 12v1.5M3 16.5v1.5M21 3v1.5M21 7.5v1.5M21 12v1.5M21 16.5v1.5" /></svg> 10,500 sqft</span>
+                            </div>
+                            <h3 class="text-lg text-gray-800 font-semibold truncate">456 Ocean Drive</h3>
+                            <p class="text-gray-500 text-sm">Malibu, CA</p>
+                        </div>
+                    </div>
+                    <!-- Card 301 -->
+                     <div class="property-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-[1.03] hover:shadow-xl" data-id="301">
+                        <div class="relative">
+                            <img class="w-full h-64 object-cover" src="./images/house 6/07ab80cdcd3fcd558c3c0e0759b7f68b-cc_ft_576.webp" alt="Mountain Retreat">
+                             <span class="absolute top-4 right-4 bg-black bg-opacity-50 text-white text-xs font-semibold px-3 py-1 rounded-full">For Sale</span>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-3xl font-bold text-gray-900 mb-2">$6,100,000</p>
+                            <div class="flex flex-wrap gap-x-4 gap-y-2 text-gray-600 mb-4 text-sm">
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" /></svg> 4 bed</span>
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 3.75l-6 6v6h6l6-6-6-6zM11.25 3.75v6m0 0v6m0-6h6m-6 0H5.25" /></svg> 4 bath</span>
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18h16.5M3 7.5l1.5 1.5M3 12l1.5-1.5m-1.5 6l1.5-1.5m1.5-1.5l-1.5 1.5m1.5-1.5l1.5 1.5M15 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3v1.5M3 7.5v1.5M3 12v1.5M3 16.5v1.5M21 3v1.5M21 7.5v1.5M21 12v1.5M21 16.5v1.5" /></svg> 5,500 sqft</span>
+                            </div>
+                            <h3 class="text-lg text-gray-800 font-semibold truncate">88 Ridge Rd</h3>
+                            <p class="text-gray-500 text-sm">Jackson Hole, WY</p>
+                        </div>
+                    </div>
+                     <!-- Card 302 -->
+                     <div class="property-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-[1.03] hover:shadow-xl" data-id="302">
+                        <div class="relative">
+                            <img class="w-full h-64 object-cover" src="./images/house 7/10dfa4222e88304f812b2f46584915e2-cc_ft_576.webp" alt="Desert Oasis">
+                            <span class="absolute top-4 right-4 bg-black bg-opacity-50 text-white text-xs font-semibold px-3 py-1 rounded-full">For Sale</span>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-3xl font-bold text-gray-900 mb-2">$3,800,000</p>
+                            <div class="flex flex-wrap gap-x-4 gap-y-2 text-gray-600 mb-4 text-sm">
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" /></svg> 3 bed</span>
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 3.75l-6 6v6h6l6-6-6-6zM11.25 3.75v6m0 0v6m0-6h6m-6 0H5.25" /></svg> 4 bath</span>
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18h16.5M3 7.5l1.5 1.5M3 12l1.5-1.5m-1.5 6l1.5-1.5m1.5-1.5l-1.5 1.5m1.5-1.5l1.5 1.5M15 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3v1.5M3 7.5v1.5M3 12v1.5M3 16.5v1.5M21 3v1.5M21 7.5v1.5M21 12v1.5M21 16.5v1.5" /></svg> 4,100 sqft</span>
+                            </div>
+                            <h3 class="text-lg text-gray-800 font-semibold truncate">500 Saguaro Trl</h3>
+                            <p class="text-gray-500 text-sm">Scottsdale, AZ</p>
+                        </div>
+                    </div>
+                     <!-- Card 303 -->
+                    <div class="property-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-[1.03] hover:shadow-xl" data-id="303">
+                        <div class="relative">
+                            <img class="w-full h-64 object-cover" src="./images/house 8/395e2e6270e9a56f02b5ab513faa9da7-cc_ft_576.webp" alt="Countryside Manor">
+                            <span class="absolute top-4 left-4 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">New Listing</span>
+                            <span class="absolute top-4 right-4 bg-black bg-opacity-50 text-white text-xs font-semibold px-3 py-1 rounded-full">For Sale</span>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-3xl font-bold text-gray-900 mb-2">$5,950,000</p>
+                            <div class="flex flex-wrap gap-x-4 gap-y-2 text-gray-600 mb-4 text-sm">
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" /></svg> 6 bed</span>
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 3.75l-6 6v6h6l6-6-6-6zM11.25 3.75v6m0 0v6m0-6h6m-6 0H5.25" /></svg> 5 bath</span>
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18h16.5M3 7.5l1.5 1.5M3 12l1.5-1.5m-1.5 6l1.5-1.5m1.5-1.5l-1.5 1.5m1.5-1.5l1.5 1.5M15 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3v1.5M3 7.5v1.5M3 12v1.5M3 16.5v1.5M21 3v1.5M21 7.5v1.5M21 12v1.5M21 16.5v1.5" /></svg> 6,800 sqft</span>
+                            </div>
+                            <h3 class="text-lg text-gray-800 font-semibold truncate">1500 Equestrian Way</h3>
+                            <p class="text-gray-500 text-sm">Franklin, TN</p>
+                        </div>
+                    </div>
+                     <!-- Card 304 -->
+                    <div class="property-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-[1.03] hover:shadow-xl" data-id="304">
+                        <div class="relative">
+                            <img class="w-full h-64 object-cover" src="./images/house 9//card.webp" alt="Urban Loft">
+                             <span class="absolute top-4 right-4 bg-black bg-opacity-50 text-white text-xs font-semibold px-3 py-1 rounded-full">For Sale</span>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-3xl font-bold text-gray-900 mb-2">$2,150,000</p>
+                            <div class="flex flex-wrap gap-x-4 gap-y-2 text-gray-600 mb-4 text-sm">
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" /></svg> 2 bed</span>
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 3.75l-6 6v6h6l6-6-6-6zM11.25 3.75v6m0 0v6m0-6h6m-6 0H5.25" /></svg> 2 bath</span>
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18h16.5M3 7.5l1.5 1.5M3 12l1.5-1.5m-1.5 6l1.5-1.5m1.5-1.5l-1.5 1.5m1.5-1.5l1.5 1.5M15 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3v1.5M3 7.5v1.5M3 12v1.5M3 16.5v1.5M21 3v1.5M21 7.5v1.5M21 12v1.5M21 16.5v1.5" /></svg> 2,400 sqft</span>
+                            </div>
+                            <h3 class="text-lg text-gray-800 font-semibold truncate">450 Geary St, Apt 8B</h3>
+                            <p class="text-gray-500 text-sm">San Francisco, CA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rent View -->
+        <section id="rent-view" class="view-section hidden bg-gray-50 py-16 sm:py-24">
+             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mb-6">
+                    <a href="#" data-view="home-view" class="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors duration-200">
+                        <svg class="w-5 h-5 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" /></svg>
+                        Back to Home
+                    </a>
+                </div>
+                <h2 class="text-3xl font-extrabold text-gray-900 mb-8">Luxury Rentals</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                     <!-- Property cards for Rent view - Identical structure -->
+                     <!-- Card 103 -->
+                    <div class="property-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-[1.03] hover:shadow-xl" data-id="103">
+                        <div class="relative">
+                            <img class="w-full h-64 object-cover" src="./images/house 3/card.webp" alt="Sky Penthouse">
+                            <span class="absolute top-4 left-4 bg-yellow-400 text-gray-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Featured</span>
+                            <span class="absolute top-4 right-4 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">For Rent</span>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-3xl font-bold text-gray-900 mb-2">$45,000/mo</p>
+                            <div class="flex flex-wrap gap-x-4 gap-y-2 text-gray-600 mb-4 text-sm">
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" /></svg> 4 bed</span>
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 3.75l-6 6v6h6l6-6-6-6zM11.25 3.75v6m0 0v6m0-6h6m-6 0H5.25" /></svg> 5 bath</span>
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18h16.5M3 7.5l1.5 1.5M3 12l1.5-1.5m-1.5 6l1.5-1.5m1.5-1.5l-1.5 1.5m1.5-1.5l1.5 1.5M15 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3v1.5M3 7.5v1.5M3 12v1.5M3 16.5v1.5M21 3v1.5M21 7.5v1.5M21 12v1.5M21 16.5v1.5" /></svg> 5,100 sqft</span>
+                            </div>
+                            <h3 class="text-lg text-gray-800 font-semibold truncate">789 Park Ave, PH-1A</h3>
+                            <p class="text-gray-500 text-sm">New York, NY</p>
+                        </div>
+                    </div>
+                     <!-- Card 201 -->
+                     <div class="property-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-[1.03] hover:shadow-xl" data-id="201">
+                        <div class="relative">
+                            <img class="w-full h-64 object-cover" src="./images/house 4/card1.webp" alt="Miami Rental">
+                             <span class="absolute top-4 right-4 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">For Rent</span>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-3xl font-bold text-gray-900 mb-2">$22,000/mo</p>
+                            <div class="flex flex-wrap gap-x-4 gap-y-2 text-gray-600 mb-4 text-sm">
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" /></svg> 3 bed</span>
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 3.75l-6 6v6h6l6-6-6-6zM11.25 3.75v6m0 0v6m0-6h6m-6 0H5.25" /></svg> 3 bath</span>
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18h16.5M3 7.5l1.5 1.5M3 12l1.5-1.5m-1.5 6l1.5-1.5m1.5-1.5l-1.5 1.5m1.5-1.5l1.5 1.5M15 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3v1.5M3 7.5v1.5M3 12v1.5M3 16.5v1.5M21 3v1.5M21 7.5v1.5M21 12v1.5M21 16.5v1.5" /></svg> 2,800 sqft</span>
+                            </div>
+                            <h3 class="text-lg text-gray-800 font-semibold truncate">300 Biscayne Blvd, Apt 50A</h3>
+                            <p class="text-gray-500 text-sm">Miami, FL</p>
+                        </div>
+                    </div>
+                     <!-- Card 202 -->
+                     <div class="property-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-[1.03] hover:shadow-xl" data-id="202">
+                        <div class="relative">
+                            <img class="w-full h-64 object-cover" src="./images/house 5/card.webp" alt="Aspen Chalet">
+                             <span class="absolute top-4 right-4 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">For Rent</span>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-3xl font-bold text-gray-900 mb-2">$75,000/mo</p>
+                            <div class="flex flex-wrap gap-x-4 gap-y-2 text-gray-600 mb-4 text-sm">
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" /></svg> 6 bed</span>
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 3.75l-6 6v6h6l6-6-6-6zM11.25 3.75v6m0 0v6m0-6h6m-6 0H5.25" /></svg> 7 bath</span>
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18h16.5M3 7.5l1.5 1.5M3 12l1.5-1.5m-1.5 6l1.5-1.5m1.5-1.5l-1.5 1.5m1.5-1.5l1.5 1.5M15 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3v1.5M3 7.5v1.5M3 12v1.5M3 16.5v1.5M21 3v1.5M21 7.5v1.5M21 12v1.5M21 16.5v1.5" /></svg> 8,000 sqft</span>
+                            </div>
+                            <h3 class="text-lg text-gray-800 font-semibold truncate">900 Starwood Peak</h3>
+                            <p class="text-gray-500 text-sm">Aspen, CO</p>
+                        </div>
+                    </div>
+                    <!-- Card 203 -->
+                    <div class="property-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-[1.03] hover:shadow-xl" data-id="203">
+                        <div class="relative">
+                            <img class="w-full h-64 object-cover" src="./images/house 6/card.webp" alt="London Townhouse">
+                             <span class="absolute top-4 right-4 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">For Rent</span>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-3xl font-bold text-gray-900 mb-2">£30,000/mo</p>
+                            <div class="flex flex-wrap gap-x-4 gap-y-2 text-gray-600 mb-4 text-sm">
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" /></svg> 5 bed</span>
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 3.75l-6 6v6h6l6-6-6-6zM11.25 3.75v6m0 0v6m0-6h6m-6 0H5.25" /></svg> 4 bath</span>
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18h16.5M3 7.5l1.5 1.5M3 12l1.5-1.5m-1.5 6l1.5-1.5m1.5-1.5l-1.5 1.5m1.5-1.5l1.5 1.5M15 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3v1.5M3 7.5v1.5M3 12v1.5M3 16.5v1.5M21 3v1.5M21 7.5v1.M21 12v1.5M21 16.5v1.5" /></svg> 4,300 sqft</span>
+                            </div>
+                            <h3 class="text-lg text-gray-800 font-semibold truncate">22 Belgrave Square</h3>
+                            <p class="text-gray-500 text-sm">London, UK</p>
+                        </div>
+                    </div>
+                    <!-- Card 401 -->
+                    <div class="property-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-[1.03] hover:shadow-xl" data-id="401">
+                        <div class="relative">
+                            <img class="w-full h-64 object-cover" src="./images/house 7/a75b8b0318cf4502da2dbaba980b7108-cc_ft_960.webp" alt="Beachfront Condo">
+                            <span class="absolute top-4 right-4 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">For Rent</span>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-3xl font-bold text-gray-900 mb-2">$18,000/mo</p>
+                            <div class="flex flex-wrap gap-x-4 gap-y-2 text-gray-600 mb-4 text-sm">
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" /></svg> 2 bed</span>
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 3.75l-6 6v6h6l6-6-6-6zM11.25 3.75v6m0 0v6m0-6h6m-6 0H5.25" /></svg> 2 bath</span>
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18h16.5M3 7.5l1.5 1.5M3 12l1.5-1.5m-1.5 6l1.5-1.5m1.5-1.5l-1.5 1.5m1.5-1.5l1.5 1.5M15 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3v1.5M3 7.5v1.5M3 12v1.5M3 16.5v1.5M21 3v1.5M21 7.5v1.5M21 12v1.5M21 16.5v1.5" /></svg> 2,100 sqft</span>
+                            </div>
+                            <h3 class="text-lg text-gray-800 font-semibold truncate">1000 Ocean Blvd, Unit 12C</h3>
+                            <p class="text-gray-500 text-sm">Santa Monica, CA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Luxury View -->
+        <section id="luxury-view" class="view-section hidden bg-gray-50 py-16 sm:py-24">
+             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mb-6">
+                    <a href="#" data-view="home-view" class="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors duration-200">
+                        <svg class="w-5 h-5 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" /></svg>
+                        Back to Home
+                    </a>
+                </div>
+                <h2 class="text-3xl font-extrabold text-gray-900 mb-8">All Luxury Listings</h2>
+                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                     <!-- Property cards for Luxury view - Include mix of sale/rent -->
+                     <!-- Card 102 -->
+                     <div class="property-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-[1.03] hover:shadow-xl" data-id="102">
+                        <div class="relative">
+                            <img class="w-full h-64 object-cover" src="./images/house1/card.png" alt="Coastal Estate">
+                            <span class="absolute top-4 left-4 bg-yellow-400 text-gray-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Featured</span>
+                            <span class="absolute top-4 right-4 bg-black bg-opacity-50 text-white text-xs font-semibold px-3 py-1 rounded-full">For Sale</span>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-3xl font-bold text-gray-900 mb-2">$14,200,000</p>
+                            <div class="flex flex-wrap gap-x-4 gap-y-2 text-gray-600 mb-4 text-sm">
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" /></svg> 7 bed</span>
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 3.75l-6 6v6h6l6-6-6-6zM11.25 3.75v6m0 0v6m0-6h6m-6 0H5.25" /></svg> 9 bath</span>
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18h16.5M3 7.5l1.5 1.5M3 12l1.5-1.5m-1.5 6l1.5-1.5m1.5-1.5l-1.5 1.5m1.5-1.5l1.5 1.5M15 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3v1.5M3 7.5v1.5M3 12v1.5M3 16.5v1.5M21 3v1.5M21 7.5v1.5M21 12v1.5M21 16.5v1.5" /></svg> 10,500 sqft</span>
+                            </div>
+                            <h3 class="text-lg text-gray-800 font-semibold truncate">456 Ocean Drive</h3>
+                            <p class="text-gray-500 text-sm">Malibu, CA</p>
+                        </div>
+                    </div>
+                     <!-- Card 202 -->
+                     <div class="property-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-[1.03] hover:shadow-xl" data-id="202">
+                        <div class="relative">
+                            <img class="w-full h-64 object-cover" src="./images/house 5/card.webp" alt="Aspen Chalet">
+                             <span class="absolute top-4 right-4 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">For Rent</span>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-3xl font-bold text-gray-900 mb-2">$75,000/mo</p>
+                            <div class="flex flex-wrap gap-x-4 gap-y-2 text-gray-600 mb-4 text-sm">
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" /></svg> 6 bed</span>
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 3.75l-6 6v6h6l6-6-6-6zM11.25 3.75v6m0 0v6m0-6h6m-6 0H5.25" /></svg> 7 bath</span>
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18h16.5M3 7.5l1.5 1.5M3 12l1.5-1.5m-1.5 6l1.5-1.5m1.5-1.5l-1.5 1.5m1.5-1.5l1.5 1.5M15 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3v1.5M3 7.5v1.5M3 12v1.5M3 16.5v1.5M21 3v1.5M21 7.5v1.5M21 12v1.5M21 16.5v1.5" /></svg> 8,000 sqft</span>
+                            </div>
+                            <h3 class="text-lg text-gray-800 font-semibold truncate">900 Starwood Peak</h3>
+                            <p class="text-gray-500 text-sm">Aspen, CO</p>
+                        </div>
+                    </div>
+                     <!-- Card 301 -->
+                    <div class="property-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-[1.03] hover:shadow-xl" data-id="301">
+                        <div class="relative">
+                            <img class="w-full h-64 object-cover" src="./images/house 6/card.webp" alt="Mountain Retreat">
+                             <span class="absolute top-4 right-4 bg-black bg-opacity-50 text-white text-xs font-semibold px-3 py-1 rounded-full">For Sale</span>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-3xl font-bold text-gray-900 mb-2">$6,100,000</p>
+                            <div class="flex flex-wrap gap-x-4 gap-y-2 text-gray-600 mb-4 text-sm">
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" /></svg> 4 bed</span>
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 3.75l-6 6v6h6l6-6-6-6zM11.25 3.75v6m0 0v6m0-6h6m-6 0H5.25" /></svg> 4 bath</span>
+                                <span class="flex items-center"><svg class="w-4 h-4 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18h16.5M3 7.5l1.5 1.5M3 12l1.5-1.5m-1.5 6l1.5-1.5m1.5-1.5l-1.5 1.5m1.5-1.5l1.5 1.5M15 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3v1.5M3 7.5v1.5M3 12v1.5M3 16.5v1.5M21 3v1.5M21 7.5v1.5M21 12v1.5M21 16.5v1.5" /></svg> 5,500 sqft</span>
+                            </div>
+                            <h3 class="text-lg text-gray-800 font-semibold truncate">88 Ridge Rd</h3>
+                            <p class="text-gray-500 text-sm">Jackson Hole, WY</p>
+                        </div>
+                    </div>
+                 </div>
+             </div>
+        </section>
+
+        <!-- About Us View -->
+        <section id="about-view" class="view-section hidden bg-white py-16 sm:py-24">
+             <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+                <div class="mb-6">
+                    <a href="#" data-view="home-view" class="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors duration-200">
+                        <svg class="w-5 h-5 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" /></svg>
+                        Back to Home
+                    </a>
+                </div>
+                <div class="text-center">
+                    <h2 class="text-base font-semibold leading-7 text-blue-600">About Us</h2>
+                    <p class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Welcome to Zill0w</p>
+                    <p class="mt-6 text-lg leading-8 text-gray-600">We are redefining luxury real estate by combining cutting-edge technology with unparalleled service. Our mission is to provide an effortless and exceptional experience for finding the world's most desirable homes.</p>
+                </div>
+                <div class="mt-16">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Our Mission</h3>
+                    <p class="text-gray-600 leading-7 mb-4">At Zill0w, we believe that finding a luxury home should be as beautiful and refined as the properties themselves. We curate a collection of the finest homes for sale and rent, ensuring that every listing meets our high standards of quality, design, and location. Our platform is built on a foundation of data, transparency, and a deep understanding of the luxury market.</p>
+                    
+                    <h3 class="text-2xl font-bold text-gray-900 mt-12 mb-6 scroll-mt-20" id="careers">Careers</h3>
+                    <p class="text-gray-600 leading-7 mb-4">Want to join a team that's passionate about real estate, technology, and design? We're always looking for talented individuals to help us build the future of luxury property search.</p>
+                    <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                            <h4 class="text-lg font-semibold text-gray-900">Senior Software Engineer</h4>
+                            <p class="text-gray-600 mt-2">Remote / New York, NY</p>
+                            <p class="text-sm text-gray-500 mt-4">Position details available soon</p>
+                        </div>
+                        <div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+                            <h4 class="text-lg font-semibold text-gray-900">Luxury Real Estate Analyst</h4>
+                            <p class="text-gray-600 mt-2">Miami, FL</p>
+                            <p class="text-sm text-gray-500 mt-4">Position details available soon</p>
+                        </div>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-gray-900 mt-12 mb-6 scroll-mt-20" id="press">Press</h3>
+                    <p class="text-gray-600 leading-7 mb-4">See what the world is saying about Zill0w.</p>
+                    <ul class="space-y-4">
+                        <li class="p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <p class="font-semibold text-gray-900">"Zill0w is the new gold standard for luxury property." - Forbes</p>
+                            <p class="text-sm text-gray-500">October 20, 2025</p>
+                        </li>
+                        <li class="p-4 bg-gray-50 rounded-lg border border-gray-200">
+                            <p class="font-semibold text-gray-900">"A beautifully simple interface for finding multi-million dollar homes." - TechCrunch</p>
+                            <p class="text-sm text-gray-500">September 15, 2025</p>
+                        </li>
+                    </ul>
+                </div>
+             </div>
+        </section>
+
+        <!-- Contact View -->
+        <section id="contact-view" class="view-section hidden bg-white py-16 sm:py-24">
+             <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+                <div class="mb-6">
+                    <a href="#" data-view="home-view" class="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors duration-200">
+                        <svg class="w-5 h-5 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" /></svg>
+                        Back to Home
+                    </a>
+                </div>
+                <div class="text-center">
+                    <h2 class="text-base font-semibold leading-7 text-blue-600">Contact Us</h2>
+                    <p class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Get in Touch</p>
+                    <p class="mt-6 text-lg leading-8 text-gray-600">We'd love to hear from you. Whether you have a question about a listing, our services, or a press inquiry, please reach out.</p>
+                </div>
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-16">
+                    <!-- Contact Form -->
+                    <form id="contact-general-form" class="space-y-6">
+                        <div>
+                            <label for="contact-name" class="block text-sm font-medium leading-6 text-gray-900">Full Name</label>
+                            <div class="mt-2"><input type="text" name="contact-name" id="contact-name" autocomplete="name" required class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"></div>
+                        </div>
+                        <div>
+                            <label for="contact-email" class="block text-sm font-medium leading-6 text-gray-900">Email</label>
+                            <div class="mt-2"><input type="email" name="contact-email" id="contact-email" autocomplete="email" required class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"></div>
+                        </div>
+                        <div>
+                            <label for="contact-message" class="block text-sm font-medium leading-6 text-gray-900">Message</label>
+                            <div class="mt-2"><textarea name="contact-message" id="contact-message" rows="4" required class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"></textarea></div>
+                        </div>
+                        <div><button type="submit" class="w-full flex justify-center rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">Send Message</button></div>
+                    </form>
+                    <!-- Contact Info -->
+                    <div class="space-y-6 text-gray-600">
+                       
+                        <div><h3 class="text-lg font-semibold text-gray-900">Call Us</h3><p>907-615-9915</p></div>
+                        <div><h3 class="text-lg font-semibold text-gray-900">Email Us</h3><p>support@zill0w.com</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info Placeholder View -->
+        <section id="info-view" class="view-section hidden bg-white py-16 sm:py-24">
+             <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+                <div class="mb-6">
+                    <a href="#" data-view="home-view" class="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors duration-200">
+                        <svg class="w-5 h-5 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" /></svg>
+                        Back to Home
+                    </a>
+                </div>
+                <div class="text-center mb-16">
+                    <h2 class="text-base font-semibold leading-7 text-blue-600">Resources</h2>
+                    <p class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Luxury Real Estate Insights</p>
+                    <p class="mt-6 text-lg leading-8 text-gray-600">Expert guides, market insights, and resources for luxury property buyers and renters.</p>
+                </div>
+                
+                <!-- Resource Categories -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Buying Guides -->
+                    <div class="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Buying Guides</h3>
+                        <ul class="space-y-3">
+                            <li class="text-gray-600">First-Time Luxury Buyer's Guide</li>
+                            <li class="text-gray-600">Investment Property Analysis</li>
+                            <li class="text-gray-600">Financing Luxury Properties</li>
+                            <li class="text-gray-600">Due Diligence Checklist</li>
+                        </ul>
+                        <p class="text-sm text-gray-500 mt-4 italic">Guides coming soon</p>
+                    </div>
+                    
+                    <!-- Market Reports -->
+                    <div class="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Market Reports</h3>
+                        <ul class="space-y-3">
+                            <li class="text-gray-600">Q4 2024 Luxury Market Report</li>
+                            <li class="text-gray-600">Beverly Hills Market Trends</li>
+                            <li class="text-gray-600">Manhattan Penthouse Analysis</li>
+                            <li class="text-gray-600">Global Luxury Outlook 2025</li>
+                        </ul>
+                        <p class="text-sm text-gray-500 mt-4 italic">Reports coming soon</p>
+                    </div>
+                    
+                    <!-- Tools & Calculators -->
+                    <div class="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Tools & Calculators</h3>
+                        <ul class="space-y-3">
+                            <li class="text-gray-600">Mortgage Calculator</li>
+                            <li class="text-gray-600">Property Tax Estimator</li>
+                            <li class="text-gray-600">ROI Calculator</li>
+                            <li class="text-gray-600">Affordability Calculator</li>
+                        </ul>
+                        <p class="text-sm text-gray-500 mt-4 italic">Tools coming soon</p>
+                    </div>
+                </div>
+                
+                <!-- Newsletter Signup -->
+                <div class="mt-16 bg-blue-50 rounded-lg p-8 text-center">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Stay Informed</h3>
+                    <p class="text-gray-600 mb-6">Get the latest luxury real estate insights delivered to your inbox.</p>
+                    <p class="text-gray-500 italic">Newsletter signup coming soon</p>
+                </div>
+             </div>
+        </section>
+
+        <!-- Legal Placeholder View -->
+        <section id="legal-view" class="view-section hidden bg-white py-16 sm:py-24">
+             <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+                <div class="mb-6">
+                    <a href="#" data-view="home-view" class="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors duration-200">
+                        <svg class="w-5 h-5 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" /></svg>
+                        Back to Home
+                    </a>
+                </div>
+                <div class="text-center">
+                    <h2 class="text-base font-semibold leading-7 text-blue-600">Legal</h2>
+                    <p class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Legal Information</p>
+                </div>
+                <div class="mt-16 prose prose-lg text-gray-600 mx-auto">
+                    <h3 id="privacy" class="scroll-mt-20 text-gray-900">Privacy Policy</h3>
+                    <p><strong>Last Updated: December 2024</strong></p>
+                    <p>At Zill0w, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, and safeguard your data when you use our luxury real estate platform.</p>
+                    <h4 class="text-gray-900">Information We Collect</h4>
+                    <p>We collect information you provide directly to us, such as when you create an account, request property information, or contact us. This may include your name, email address, phone number, and property preferences.</p>
+                    <h4 class="text-gray-900">How We Use Your Information</h4>
+                    <p>We use your information to provide our services, communicate with you about properties, improve our platform, and comply with legal obligations. We do not sell your personal information to third parties.</p>
+                    
+                    <h3 id="terms" class="mt-12 scroll-mt-20 text-gray-900">Terms of Service</h3>
+                    <p><strong>Effective Date: December 2024</strong></p>
+                    <p>Welcome to Zill0w. By accessing or using our platform, you agree to be bound by these Terms of Service and our Privacy Policy.</p>
+                    <h4 class="text-gray-900">Use of Our Service</h4>
+                    <p>You may use our service to search for and view luxury real estate listings. You agree to use the service only for lawful purposes and in accordance with these terms.</p>
+                    <h4 class="text-gray-900">Property Information</h4>
+                    <p>All property information is provided for informational purposes only. Prices, availability, and details are subject to change without notice. We recommend verifying all information directly with the listing agent or owner.</p>
+                    <h4 class="text-gray-900">Contact Information</h4>
+                    <p>For questions about these terms or our privacy practices, please contact us at legal@zill0w.com or (555) 123-4567.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ====================================================== -->
+        <!-- == Property Detail View == -->
+        <!-- ====================================================== -->
+        <section id="detail-view" class="view-section hidden bg-white">
+            <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+                
+                <!-- Back Button -->
+                <div class="mb-6">
+                    <a href="#" id="back-to-listings-btn" class="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800">
+                        <svg class="w-5 h-5 mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" /></svg>
+                        Back to listings
+                    </a>
+                </div>
+
+                <!-- Image Grid -->
+                <div class="image-grid mb-8 max-h-[60vh] overflow-hidden rounded-lg shadow-xl cursor-pointer" id="image-grid-container">
+                    <div class="main-image relative overflow-hidden rounded-l-lg">
+                         <img id="detail-main-image" src="..." alt="Main property view" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                    </div>
+                    <div class="relative overflow-hidden">
+                        <img id="detail-image-2" src="..." alt="Property view 2" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                    </div>
+                    <div class="relative overflow-hidden">
+                        <img id="detail-image-3" src="..." alt="Property view 3" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                    </div>
+                    <div class="relative overflow-hidden md:block hidden">
+                        <img id="detail-image-4" src="..." alt="Property view 4" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
+                    </div>
+                    <div class="relative overflow-hidden rounded-r-lg md:rounded-none">
+                        <img id="detail-image-5" src="..." alt="Property view 5" class="w-full h-full object-cover brightness-75">
+                         <button id="see-all-photos-btn" class="touch-target absolute inset-0 flex items-center justify-center text-white font-semibold bg-black bg-opacity-50 hover:bg-opacity-70 transition-all duration-200 text-sm md:text-base">
+                            <span class="text-center">
+                                See all photos<br>
+                                (<span id="photo-count">0</span>)
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Main Layout Grid -->
+                <div class="lg:grid lg:grid-cols-3 lg:gap-8">
+                    <!-- Left Column (Main Content) -->
+                    <div class="lg:col-span-2">
+                        <!-- Header Info -->
+                        <div class="py-6 border-b">
+                            <h1 id="detail-price" class="text-4xl sm:text-5xl font-extrabold text-gray-900">Loading...</h1>
+                            <p id="detail-address" class="text-xl text-gray-600 mt-2">Loading...</p>
+                            <div class="flex flex-wrap gap-x-6 gap-y-2 text-lg text-gray-800 mt-4">
+                                <span class="flex items-center"><svg class="w-5 h-5 mr-1 text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5m8.25 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zM3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125V6.75c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v.75c0 .621.504 1.125 1.125 1.125z" /></svg><span id="detail-beds" class="font-semibold">--</span>&nbsp;bd</span>
+                                <span class="flex items-center"><svg class="w-5 h-5 mr-1 text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 3.75l-6 6v6h6l6-6-6-6zM11.25 3.75v6m0 0v6m0-6h6m-6 0H5.25" /></svg><span id="detail-baths" class="font-semibold">--</span>&nbsp;ba</span>
+                                <span class="flex items-center"><svg class="w-5 h-5 mr-1 text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18h16.5M3 7.5l1.5 1.5M3 12l1.5-1.5m-1.5 6l1.5-1.5m1.5-1.5l-1.5 1.5m1.5-1.5l1.5 1.5M15 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3v1.5M3 7.5v1.5M3 12v1.5M3 16.5v1.5M21 3v1.5M21 7.5v1.5M21 12v1.5M21 16.5v1.5" /></svg><span id="detail-sqft" class="font-semibold">--</span>&nbsp;sqft</span>
+                            </div>
+                        </div>
+                        
+                         <!-- Prominent Contact Owner Section -->
+                        <div class="py-6 border-b">
+                            <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                                <h2 class="text-2xl font-bold text-gray-900 mb-4">Contact Owner</h2>
+                                <p class="text-gray-700 mb-1">Listed by: <span id="detail-owner-name" class="font-semibold">Loading...</span></p>
+                                <p class="text-gray-700 mb-4">Phone: <span id="detail-owner-phone" class="font-semibold">Loading...</span></p>
+                                <button id="contact-owner-btn" class="touch-target bg-green-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-green-700 w-full sm:w-auto transition-all duration-200 hover:shadow-lg active:scale-95">
+                                    Send Message to Owner
+                                </button>
+                                <p class="text-xs text-gray-500 mt-2">By contacting the owner, you agree to our Terms of Use.</p>
+                            </div>
+                        </div>
+
+                        <!-- Tabs -->
+                        <div class="border-b border-gray-200 mt-6 overflow-x-auto">
+                             <nav class="-mb-px flex space-x-4 md:space-x-8 min-w-max" aria-label="Tabs">
+                                <button data-tab="home-details-tab" class="tab-button touch-target active whitespace-nowrap py-4 px-2 md:px-1 text-sm font-medium text-gray-500 hover:text-gray-700">Home details</button>
+                                <button data-tab="neighborhood-tab" class="tab-button touch-target whitespace-nowrap py-4 px-2 md:px-1 text-sm font-medium text-gray-500 hover:text-gray-700">Neighborhood</button>
+                                <button data-tab="price-history-tab" class="tab-button touch-target whitespace-nowrap py-4 px-2 md:px-1 text-sm font-medium text-gray-500 hover:text-gray-700">Price History</button>
+                                <button data-tab="schools-tab" class="tab-button touch-target whitespace-nowrap py-4 px-2 md:px-1 text-sm font-medium text-gray-500 hover:text-gray-700">Schools</button>
+                            </nav>
+                        </div>
+                        
+                        <!-- Tab Content -->
+                        <div>
+                             <!-- Home Details Tab Content -->
+                             <div id="home-details-tab" class="tab-content active py-8">
+                                <h2 class="text-2xl font-bold text-gray-900 mb-4">Overview</h2>
+                                <p id="detail-description" class="text-gray-700 leading-relaxed mb-8">Loading description...</p>
+                                <h2 class="text-2xl font-bold text-gray-900 mb-6">Facts & features</h2>
+                                <ul id="detail-features-list" class="space-y-3 mb-8">
+                                    <li class="flex justify-between py-2 border-b"><span class="text-gray-600">Loading...</span></li>
+                                </ul>
+                             </div>
+                             <!-- Neighborhood Tab Content -->
+                            <div id="neighborhood-tab" class="tab-content py-8">
+                                <h2 class="text-2xl font-bold text-gray-900 mb-6">Neighborhood Overview</h2>
+                                <div id="neighborhood-content">
+                                    <p class="text-gray-600 mb-6">This prestigious neighborhood offers an exceptional lifestyle with world-class amenities and convenient access to shopping, dining, and entertainment.</p>
+                                    
+                                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Local Amenities</h3>
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                                        <div class="bg-gray-50 p-4 rounded-lg">
+                                            <h4 class="font-semibold text-gray-900 mb-2">Shopping & Dining</h4>
+                                            <ul class="text-sm text-gray-600 space-y-1">
+                                                <li>• Luxury shopping centers within 5 miles</li>
+                                                <li>• Fine dining restaurants nearby</li>
+                                                <li>• Gourmet markets and cafes</li>
+                                            </ul>
+                                        </div>
+                                        <div class="bg-gray-50 p-4 rounded-lg">
+                                            <h4 class="font-semibold text-gray-900 mb-2">Recreation</h4>
+                                            <ul class="text-sm text-gray-600 space-y-1">
+                                                <li>• Private country clubs</li>
+                                                <li>• Golf courses and tennis clubs</li>
+                                                <li>• Parks and walking trails</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Transportation</h3>
+                                    <p class="text-gray-600">Excellent connectivity with major highways and public transportation options. Easy access to airports and business districts.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Price History Tab Content -->
+                            <div id="price-history-tab" class="tab-content py-8">
+                                <h2 class="text-2xl font-bold text-gray-900 mb-6">Price History</h2>
+                                <div class="overflow-x-auto">
+                                    <table class="min-w-full divide-y divide-gray-200">
+                                        <thead class="bg-gray-50">
+                                            <tr>
+                                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Date</th>
+                                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Event</th>
+                                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Price</th>
+                                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Change</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="price-history-table" class="bg-white divide-y divide-gray-200">
+                                            <!-- Will be populated by JavaScript -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p class="text-xs text-gray-500 mt-4">Price history data is estimated and may not reflect all market transactions.</p>
+                            </div>
+                            
+                            <!-- Schools Tab Content -->
+                            <div id="schools-tab" class="tab-content py-8">
+                                <h2 class="text-2xl font-bold text-gray-900 mb-6">Nearby Schools</h2>
+                                <div id="schools-content">
+                                    <p class="text-gray-600 mb-6">This area is served by highly-rated schools at all levels, making it ideal for families.</p>
+                                    
+                                    <div class="space-y-4">
+                                        <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg border">
+                                            <div>
+                                                <p class="font-semibold text-gray-900">Elementary School</p>
+                                                <p class="text-sm text-gray-500">Grades K-5 | 0.8 miles</p>
+                                            </div>
+                                            <span class="text-sm font-bold text-blue-600 bg-blue-100 px-3 py-1 rounded-full">9/10</span>
+                                        </div>
+                                        
+                                        <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg border">
+                                            <div>
+                                                <p class="font-semibold text-gray-900">Middle School</p>
+                                                <p class="text-sm text-gray-500">Grades 6-8 | 1.2 miles</p>
+                                            </div>
+                                            <span class="text-sm font-bold text-blue-600 bg-blue-100 px-3 py-1 rounded-full">8/10</span>
+                                        </div>
+                                        
+                                        <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg border">
+                                            <div>
+                                                <p class="font-semibold text-gray-900">High School</p>
+                                                <p class="text-sm text-gray-500">Grades 9-12 | 2.1 miles</p>
+                                            </div>
+                                            <span class="text-sm font-bold text-blue-600 bg-blue-100 px-3 py-1 rounded-full">9/10</span>
+                                        </div>
+                                        
+                                        <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg border">
+                                            <div>
+                                                <p class="font-semibold text-gray-900">Private Academy</p>
+                                                <p class="text-sm text-gray-500">Grades K-12 | 1.8 miles</p>
+                                            </div>
+                                            <span class="text-sm font-bold text-blue-600 bg-blue-100 px-3 py-1 rounded-full">10/10</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <p class="text-xs text-gray-500 mt-4">School ratings and distances are approximate. Please verify with local school districts.</p>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+
+                    <!-- Right Column (Agent Contact) -->
+                    <div class="lg:col-span-1 mt-12 lg:mt-0">
+                         <div class="lg:sticky lg:top-24">
+                            <!-- Direct Agent Contact -->
+                            <div class="bg-white shadow-xl rounded-lg p-6 border border-gray-200">
+                                <h3 class="text-xl font-bold text-gray-900 mb-4">Contact Agent</h3>
+                                <div class="mb-6">
+                                    <p class="text-gray-700 mb-2">Listed by: <span id="sidebar-agent-name" class="font-semibold">Loading...</span></p>
+                                    <p class="text-gray-700 mb-4">Phone: <span id="sidebar-agent-phone" class="font-semibold">Loading...</span></p>
+                                </div>
+                                <form id="agent-contact-form" class="space-y-4">
+                                    <div>
+                                        <input type="text" name="contact-name" id="contact-name" required class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600" placeholder="Your Name">
+                                    </div>
+                                    <div>
+                                        <input type="email" name="contact-email" id="contact-email" required class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600" placeholder="Your Email">
+                                    </div>
+                                    <div>
+                                        <input type="tel" name="contact-phone" id="contact-phone" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600" placeholder="Your Phone (Optional)">
+                                    </div>
+                                    <div>
+                                        <textarea name="contact-message" id="agent-message" rows="4" required class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600" placeholder="I'm interested in this property..."></textarea>
+                                    </div>
+                                    <div><button type="submit" class="touch-target w-full flex justify-center rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-all duration-200 hover:shadow-lg active:scale-95">Send Message</button></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800" aria-labelledby="footer-heading">
+        <h2 id="footer-heading" class="sr-only">Footer</h2>
+        <div class="container mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8 lg:py-32">
+            <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+                <!-- Logo and Description -->
+                <div class="space-y-8">
+                    <a href="#" data-view="home-view" class="text-4xl font-extrabold text-blue-500 cursor-pointer">Zill0w</a>
+                    <p class="text-sm text-gray-300">The premier destination for luxury real estate listings and market insights.</p>
+                </div>
+                <!-- Footer Links -->
+                <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold leading-6 text-white">Listings</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li><a href="#" data-view="buy-view" class="text-sm leading-6 text-gray-300 hover:text-white">Buy</a></li>
+                                <li><a href="#" data-view="rent-view" class="text-sm leading-6 text-gray-300 hover:text-white">Rent</a></li>
+                                <li><a href="#" data-view="luxury-view" class="text-sm leading-6 text-gray-300 hover:text-white">Featured</a></li>
+                                <li><a href="#" data-view="buy-view" class="text-sm leading-6 text-gray-300 hover:text-white">New Homes</a></li>
+                            </ul>
+                        </div>
+                        <div class="mt-10 md:mt-0">
+                            <h3 class="text-sm font-semibold leading-6 text-white">Company</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li><a href="#" data-view="about-view" class="text-sm leading-6 text-gray-300 hover:text-white">About</a></li>
+                                <li><a href="#" data-view="about-view" data-anchor="careers" class="text-sm leading-6 text-gray-300 hover:text-white">Careers</a></li>
+                                <li><a href="#" data-view="about-view" data-anchor="press" class="text-sm leading-6 text-gray-300 hover:text-white">Press</a></li>
+                                <li><a href="#" data-view="contact-view" class="text-sm leading-6 text-gray-300 hover:text-white">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold leading-6 text-white">Resources</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li><a href="#" data-view="info-view" class="text-sm leading-6 text-gray-300 hover:text-white">Blog</a></li>
+                                <li><a href="#" data-view="info-view" class="text-sm leading-6 text-gray-300 hover:text-white">Guides</a></li>
+                                <li><a href="#" data-view="info-view" class="text-sm leading-6 text-gray-300 hover:text-white">Agents</a></li>
+                                <li><a href="#" data-view="info-view" class="text-sm leading-6 text-gray-300 hover:text-white">Partners</a></li>
+                            </ul>
+                        </div>
+                        <div class="mt-10 md:mt-0">
+                            <h3 class="text-sm font-semibold leading-6 text-white">Legal</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li><a href="#" data-view="legal-view" data-anchor="privacy" class="text-sm leading-6 text-gray-300 hover:text-white">Privacy</a></li>
+                                <li><a href="#" data-view="legal-view" data-anchor="terms" class="text-sm leading-6 text-gray-300 hover:text-white">Terms</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
+                <p class="text-xs leading-5 text-gray-400">&copy; 2025 Zill0w. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Global Message Box (toast) -->
+    <div id="message-box" class="hidden fixed bottom-5 left-1/2 -translate-x-1/2 bg-gray-900 text-white px-6 py-3 rounded-full shadow-lg transition-all duration-300 opacity-0 z-[100] safe-area-inset max-w-[90vw] text-center">
+        <span id="message-text"></span>
+    </div>
+
+     <!-- ======================== -->
+     <!-- == Image Modal == -->
+     <!-- ======================== -->
+    <div id="image-modal-overlay" class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-[90] hidden p-2 md:p-4" onclick="closeImageModal()">
+        <div id="image-modal-content" class="relative bg-white p-2 md:p-4 rounded-lg shadow-xl max-w-6xl max-h-[95vh] overflow-hidden" onclick="event.stopPropagation()">
+            <button onclick="closeImageModal()" class="touch-target absolute top-2 right-2 text-gray-600 hover:text-gray-900 bg-white rounded-full p-2 z-[92] shadow-lg transition-all duration-200 hover:scale-110">
+                <svg class="w-5 h-5 md:w-6 md:h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+            </button>
+            <img id="modal-image" src="" alt="Full size property view" class="w-full h-auto object-contain max-h-[75vh] md:max-h-[80vh] rounded">
+            <button id="modal-prev-btn" class="touch-target absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white/95 text-gray-900 p-2 md:p-3 rounded-full shadow-lg z-[91] transition-all duration-200 hover:scale-110">
+                <svg class="w-5 h-5 md:w-6 md:h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" /></svg>
+            </button>
+            <button id="modal-next-btn" class="touch-target absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white/95 text-gray-900 p-2 md:p-3 rounded-full shadow-lg z-[91] transition-all duration-200 hover:scale-110">
+                 <svg class="w-5 h-5 md:w-6 md:h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+            </button>
+            <p id="modal-caption" class="text-center text-sm text-gray-700 mt-2 px-2">Image 1 of X</p>
+        </div>
+    </div> 
+<script src="script.js"></script>
+</body>
+</html>
+
