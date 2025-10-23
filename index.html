@@ -19,7 +19,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    
+    <!-- Preload critical images -->
+    <link rel="preload" href="./images/hero2.png" as="image">
+    <link rel="preload" href="./images/house 2/IMG-20251022-WA0053.jpg" as="image">
+    <link rel="preload" href="./images/house1/0a128cd7c9b7c24a5d7afed98e25e269-cc_ft_960.webp" as="image">
 </head>
 <body class="bg-gray-50">
 
@@ -73,7 +76,7 @@
              <!-- Hero Section -->
             <div class="relative bg-gray-800">
                 <div class="absolute inset-0">
-                    <img class="w-full h-full object-cover brightness-50" src="./images/hero2.png" alt="Luxury home background">
+                    <img class="w-full h-full object-cover brightness-50" src="./images/hero2.png" alt="Luxury home background" loading="eager">
                 </div>
                 <div class="relative min-h-[70vh] flex items-center justify-center py-24 sm:py-32">
                     <div class="flex flex-col items-center text-center px-4">
@@ -102,7 +105,7 @@
                              <!-- Card 101 -->
                              <div class="property-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-[1.03] hover:shadow-xl" data-id="101">
                                 <div class="relative">
-                                    <img class="w-full h-64 object-cover" src="./images/house 2/card.jpg" alt="Modern Villa">
+                                    <img class="w-full h-64 object-cover" src="./images/house 2/card.jpg" alt="Modern Villa" loading="lazy">
                                     <span class="absolute top-4 left-4 bg-yellow-400 text-gray-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Featured</span>
                                     <span class="absolute top-4 right-4 bg-black bg-opacity-50 text-white text-xs font-semibold px-3 py-1 rounded-full">For Sale</span>
                                 </div>
@@ -126,7 +129,7 @@
                              <!-- Card 102 -->
                              <div class="property-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-[1.03] hover:shadow-xl" data-id="102">
                                 <div class="relative">
-                                    <img class="w-full h-64 object-cover" src="./images/house1/card.png" alt="Coastal Estate">
+                                    <img class="w-full h-64 object-cover" src="./images/house1/card.png" alt="Coastal Estate" loading="lazy">
                                     <span class="absolute top-4 left-4 bg-yellow-400 text-gray-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Featured</span>
                                     <span class="absolute top-4 right-4 bg-black bg-opacity-50 text-white text-xs font-semibold px-3 py-1 rounded-full">For Sale</span>
                                 </div>
@@ -150,7 +153,7 @@
                              <!-- Card 103 -->
                              <div class="property-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-[1.03] hover:shadow-xl" data-id="103">
                                 <div class="relative">
-                                    <img class="w-full h-64 object-cover" src="./images/house 3/card.webp" alt="Sky Penthouse">
+                                    <img class="w-full h-64 object-cover" src="./images/house 3/card.webp" alt="Sky Penthouse" loading="lazy">
                                     <span class="absolute top-4 left-4 bg-yellow-400 text-gray-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Featured</span>
                                     <span class="absolute top-4 right-4 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">For Rent</span>
                                 </div>
@@ -180,7 +183,7 @@
                             <!-- Card 201 -->
                              <div class="property-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-[1.03] hover:shadow-xl" data-id="201">
                                 <div class="relative">
-                                    <img class="w-full h-64 object-cover" src="./images/house 4/card1.webp" alt="Miami Rental">
+                                    <img class="w-full h-64 object-cover" src="./images/house 4/card1.webp" alt="Miami Rental" loading="lazy">
                                     <span class="absolute top-4 right-4 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">For Rent</span>
                                 </div>
                                 <div class="p-6">
@@ -203,7 +206,7 @@
                             <!-- Card 202 -->
                             <div class="property-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-[1.03] hover:shadow-xl" data-id="202">
                                 <div class="relative">
-                                    <img class="w-full h-64 object-cover" src="./images/house 5/card.webp" alt="Aspen Chalet">
+                                    <img class="w-full h-64 object-cover" src="./images/house 5/card.webp" alt="Aspen Chalet" loading="lazy">
                                     <span class="absolute top-4 right-4 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">For Rent</span>
                                 </div>
                                 <div class="p-6">
@@ -220,7 +223,7 @@
                             <!-- Card 203 -->
                             <div class="property-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-[1.03] hover:shadow-xl" data-id="203">
                                 <div class="relative">
-                                    <img class="w-full h-64 object-cover" src="./images/house 6/card.webp" alt="London Townhouse">
+                                    <img class="w-full h-64 object-cover" src="./images/house 6/card.webp" alt="London Townhouse" loading="lazy">
                                     <span class="absolute top-4 right-4 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">For Rent</span>
                                 </div>
                                 <div class="p-6">

@@ -273,9 +273,26 @@
         };
 
         // ======================================================
+        // == IMAGE PRELOADING ==
+        // ======================================================
+        function preloadImages() {
+            const criticalImages = [
+                './images/house 2/card.jpg',
+                './images/house1/card.png',
+                './images/house 3/card.webp'
+            ];
+            
+            criticalImages.forEach(src => {
+                const img = new Image();
+                img.src = src;
+            });
+        }
+        
+        // ======================================================
         // == APP LOGIC ==
         // ======================================================
         document.addEventListener('DOMContentLoaded', () => {
+            preloadImages();
             // --- Element Selectors ---
             const allViews = document.querySelectorAll('.view-section');
             const navLinks = document.querySelectorAll('[data-view]');
@@ -776,6 +793,26 @@
                 console.error('Global error:', e.error);
                 showMessage('Something went wrong. Please try again.', true);
             });
+            
+            // Intersection Observer for lazy loading optimization
+            if ('IntersectionObserver' in window) {
+                const imageObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const img = entry.target;
+                            if (img.dataset.src) {
+                                img.src = img.dataset.src;
+                                img.removeAttribute('data-src');
+                                imageObserver.unobserve(img);
+                            }
+                        }
+                    });
+                });
+                
+                document.querySelectorAll('img[data-src]').forEach(img => {
+                    imageObserver.observe(img);
+                });
+            }
             
             showView('home-view');
 
