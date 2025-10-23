@@ -1,4 +1,3 @@
-
         html {
             scroll-behavior: smooth;
         }
@@ -29,6 +28,8 @@
             border-bottom: 2px solid transparent;
             transition: all 0.2s ease;
             touch-action: manipulation;
+            min-height: 48px;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
         }
         .tab-button.active { 
             border-bottom-color: #2563EB; 
@@ -55,11 +56,23 @@
         
         /* Touch-friendly buttons */
         .touch-target {
-            min-height: 44px;
-            min-width: 44px;
+            min-height: 48px;
+            min-width: 48px;
             display: flex;
             align-items: center;
             justify-content: center;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+            user-select: none;
+            touch-action: manipulation;
+        }
+        
+        /* Mobile button fixes */
+        button, .property-card, [data-view] {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            user-select: none;
+            touch-action: manipulation;
         }
         
         /* Enhanced property cards */
@@ -140,6 +153,8 @@
         /* Prevent zoom on iOS */
         input[type="text"], input[type="email"], input[type="tel"], textarea {
             font-size: 16px;
+            -webkit-appearance: none;
+            border-radius: 8px;
         }
         
         /* Safe area for notched devices */
@@ -171,5 +186,29 @@
         /* Preload critical images */
         .hero-image {
             will-change: transform;
+        }
+        
+        /* Mobile viewport fixes */
+        @media (max-width: 640px) {
+            .touch-target {
+                min-height: 52px;
+                padding: 12px;
+            }
+            
+            button {
+                min-height: 48px;
+                padding: 12px 16px;
+                font-size: 16px;
+            }
+            
+            .property-card {
+                margin-bottom: 8px;
+            }
+            
+            /* Fix mobile menu items */
+            .mobile-nav-link {
+                min-height: 52px;
+                padding: 16px 20px;
+            }
         }
     
